@@ -19,7 +19,10 @@ document.getElementById('btn-donate')
     // update the donation balance
     document.getElementById('donation-balance').innerText = newBalance;
 
-
+    // if(addMoneyInput <= 0 || isNaN(addMoneyInput) || mainAccountBalance < addMoneyInput){
+    //     alert('Invalid Input');
+    //     return;
+    //  }
 
    // cash out from main balance
  const mainAccountBalance = document.getElementById('main-balance').innerText;
@@ -27,9 +30,19 @@ document.getElementById('btn-donate')
  const newMainBalance = mainBalanceNumber - addMoneyNumber;
  document.getElementById('main-balance').innerText = newMainBalance;
  
- 
+//  history section
+const div = document.createElement('div');
+div.classList.add('bg-[#FFFFFF]');
+div.innerHTML = `
+  <h2 class="text-lg text-[#111111] font-bold"> ${addMoneyInput} Taka is Donated for famine-2024 at Noakhali,Bangladesh </h2>
+  <p> ${new Date().toLocaleDateString()}</p>
+              
+
+`
+ document.getElementById('history-container').appendChild(div);
+
     
 
    
     
-})
+});

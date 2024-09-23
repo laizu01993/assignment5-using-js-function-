@@ -29,6 +29,13 @@
    <!-- banner buttons -->
    <div class="text-center mt-8  gap-4">
     <button id="show-donation-btn" class="btn bg-[#B4F461]">Donation</button>
+    <div id="confirmation-modal" class="modal">
+      <div class="modal-content">
+        <h2>Congrats!</h2>
+        <p>You Have Donated <strong>Successfully</strong></p>
+        <button id="closeButton">close confirmation</button>
+      </div>
+    </div>
     <button id="show-history-btn" class="btn bg-[#B4F461]">History</button>
    </div>
  </header>
@@ -96,8 +103,8 @@
    </section>
    </section>
     <!--history start  -->
-    <div id="history-section" class="container shadow-md rounded-lg hidden">
-      <h2 class="text-3xl text-[#111111] font-medium">transaction history</h2>
+    <div id="history-section" class="container shadow-md rounded-lg border hidden">
+      
       <div id="history-container"></div>
     </div>
     <!-- history end -->
@@ -105,6 +112,6 @@
 <script src="js/donation.js"></script>
 <script src="js/features.js"></script>
 <script src="js/utilities.js"></script>
-<script src="js/cashout.js"></script>
+
 </body>
 </html>
