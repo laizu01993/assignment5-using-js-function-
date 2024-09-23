@@ -29,13 +29,7 @@
    <!-- banner buttons -->
    <div class="text-center mt-8  gap-4">
     <button id="show-donation-btn" class="btn bg-[#B4F461]">Donation</button>
-    <div id="confirmation-modal" class="modal">
-      <div class="modal-content">
-        <h2>Congrats!</h2>
-        <p>You Have Donated <strong>Successfully</strong></p>
-        <button id="closeButton">close confirmation</button>
-      </div>
-    </div>
+    
     <button id="show-history-btn" class="btn bg-[#B4F461]">History</button>
    </div>
  </header>
@@ -58,6 +52,13 @@
       <p class="text-sm text-[#111111] font-light"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
       <input id="input-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-3 py-2 px-4 " />
       <button id="btn-donate" class="font-semibold text-xl text-[#111111] bg-[#B4F461] mt-4 w-full rounded-md">Donate Now</button>
+      <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+          <h2>Congrats!</h2>
+          <p>You Have Donated <strong>Successfully</strong></p>
+          <button id="closeButton">close confirmation</button>
+        </div>
+      </div>
     </div>
     </div>
    </section> 
@@ -112,6 +113,6 @@
 <script src="js/donation.js"></script>
 <script src="js/features.js"></script>
 <script src="js/utilities.js"></script>
-
+<script src="js/modal.js"></script>
 </body>
 </html>
