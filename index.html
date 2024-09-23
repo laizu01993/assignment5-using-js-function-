@@ -10,7 +10,7 @@
 
 </head>
 <body class="lexend-font">
- <header>
+ <header class="sticky top-0 backdrop-blur-md">
    <nav class="justify-between grid grid-cols-1 lg:grid-cols-3 items-center bg-[#F9F7F3]">
     <div class="navbar-start">
       <button class="text-[#111111] bg-[#B4F461] rounded-lg px-4 font-semibold text-xl">Blog</button>
@@ -21,19 +21,20 @@
     </div>
     <div class="navbar-end flex items-center">
         <img src="assets/coin.png" alt="">
-        <div id="balance" class="stat-value font-medium text-xl">
+        <div id="main-balance" class="stat-value font-medium text-xl">
           5500 BDT
         </div>
     </div>
    </nav>
    <!-- banner buttons -->
    <div class="text-center mt-8  gap-4">
-    <button class="btn bg-[#B4F461]">Donation</button>
-    <button class="btn bg-[#B4F461]">History</button>
+    <button id="show-donation-btn" class="btn bg-[#B4F461]">Donation</button>
+    <button id="show-history-btn" class="btn bg-[#B4F461]">History</button>
    </div>
  </header>
  <main>
   <!-- noakhali donation section -->
+   <section id="donation-section" >
    <section class="mt-8">
     <div class="container shadow-md rounded-lg grid grid-cols-1 lg:flex justify-between border gap-8 px-4 py-4">
       <img src="assets/noakhali.png" alt="">
@@ -92,8 +93,18 @@
       <button class="font-semibold text-xl text-[#111111] bg-[#B4F461] mt-4 w-full rounded-md">Donate Now</button>
     </div>
     </div>
-   </section> 
+   </section>
+   </section>
+    <!--history start  -->
+    <div id="history-section" class="container shadow-md rounded-lg hidden">
+      <h2 class="text-3xl text-[#111111] font-medium">transaction history</h2>
+      <div id="history-container"></div>
+    </div>
+    <!-- history end -->
 </main>
 <script src="js/donation.js"></script>
+<script src="js/features.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/cashout.js"></script>
 </body>
 </html>

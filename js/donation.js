@@ -1,3 +1,4 @@
+ 
 // add money to the donation stat
 
 document.getElementById('btn-donate')
@@ -13,7 +14,22 @@ document.getElementById('btn-donate')
     
     // add addMoneyInput with donation balance
     const newBalance = addMoneyNumber + donateBalanceNumber;
-    console.log(newBalance);
+    
+
     // update the donation balance
     document.getElementById('donation-balance').innerText = newBalance;
+
+
+
+   // cash out from main balance
+ const mainAccountBalance = document.getElementById('main-balance').innerText;
+ const mainBalanceNumber = parseFloat(mainAccountBalance);
+ const newMainBalance = mainBalanceNumber - addMoneyNumber;
+ document.getElementById('main-balance').innerText = newMainBalance;
+ 
+ 
+    
+
+   
+    
 })
