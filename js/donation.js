@@ -54,24 +54,12 @@ document.getElementById('main-balance').innerText = newMainBalance;
 
 
 //  history section
-const dateTimeOptions = {
-  weekday: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-  hour: '2-digit',
-  minute: '2-digit',
-  second:'2-digit',
-  hour12: false
-};
-
-const dateTimeString = new Date().toLocaleString('en-BD', dateTimeOptions);
 
 const div = document.createElement('div');
 div.classList.add('bg-[#FFFFFF]');
 div.innerHTML = `
   <h2 class="text-lg text-[#111111] font-bold"> ${addMoneyInput} Taka is Donated for famine-2024 at Noakhali,Bangladesh </h2>
-  <p> Date: ${dateTimeString}</p>
+  <p> Date: ${new Date().toString()}</p>
               
 `
 document.getElementById('history-container').appendChild(div);
