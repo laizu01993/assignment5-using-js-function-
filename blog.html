@@ -4,29 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="lexend-font">
+  <header>
+  <nav class="justify-between grid grid-cols-1 lg:grid-cols-3 items-center bg-[#F9F7F3]">
+    <div class="navbar-start">
+      <button id="btn-home" class="text-[#111111] bg-[#B4F461] rounded-lg px-4 font-semibold text-xl">Home</button>
+    </div>
+    <div class="navbar-center flex items-center">
+       <img src="assets/logo.png" alt="">
+       <h2 class="font-semibold text-xl text-[#111111]">Donate Bangladesh</h2> 
+    </div>
+    <div class="navbar-end flex items-center">
+        <img src="assets/coin.png" alt="">
+        <div id="main-balance" class="stat-value font-medium text-xl">
+          5500 BDT
+        </div>
+    </div>
+   </nav>
+  </header>
+  <main class="mt-14">
     <h2 class="font-semibold text-2xl text-[#111111]">Important FAQ</h2>
     <div class="join join-vertical w-full">
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" checked="checked" />
           <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>The Document Object Model is a cross-platform and language-independent interface that treats an HTML or XML document as a tree structure wherein each node is an object representing a part of the document.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>document.querySelector('selector').</p>
           </div>
         </div>
         <div class="collapse collapse-arrow join-item border-base-300 border">
           <input type="radio" name="my-accordion-4" />
           <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.</p>
           </div>
         </div>
 
@@ -34,8 +55,10 @@
             <input type="radio" name="my-accordion-4" />
             <div class="collapse-title text-xl font-medium">How do you manupulate an element's attributes and styles using the DOM?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The onfocus event handler method is used to change the <input> element's style when the user  clicks inside it.</p>
             </div>
-      </div>
+          </div>
+        </main>
+          <script src="js/home.js"></script>
 </body>
 </html>
